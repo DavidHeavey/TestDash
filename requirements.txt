@@ -1,6 +1,4 @@
 dash==1.18.1
 dash-bootstrap-components
-dash-core-components
-dash-html-components
 plotly==4.14.1
 pandas==1.1.5
