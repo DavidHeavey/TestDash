@@ -14,7 +14,7 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.COSMO])
 # Read Data
 # =====================================================================================================================
 headers = ['Date', '2020', '2019', '2018', '2017', '2016', 'Restrictions']
-df = pd.read_csv('Data/Counts.csv', names=headers, header=0, sep=',')
+df = pd.read_csv('https://raw.githubusercontent.com/DavidHeavey/TestDash/master/Data/Counts.csv', names=headers, header=0, sep=',')
 df['Date'] = pd.to_datetime(df['Date'], format='%d/%m/%Y')
 # create Baseline based on mean 2016 to 2019
 df['Baseline'] = df.iloc[:, 2:5].mean(axis=1)
